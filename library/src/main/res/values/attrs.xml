@@ -1,0 +1,50 @@
+<resources>
+    <declare-styleable name="FlowlayoutTags">
+
+        <attr name="tag_backgroundColor" format="reference|color" />
+        <attr name="tag_checkedBackgroundColor" format="reference|color" />
+        <attr name="tag_pressedBackgroundColor" format="reference|color" />
+
+        <attr name="tag_inputHintColor" format="color" />
+        <attr name="tag_inputTextColor" format="color" />
+
+        <attr name="tag_horizontalSpacing" format="dimension" />
+        <attr name="tag_verticalSpacing" format="dimension" />
+        <attr name="tag_horizontalPadding" format="dimension" />
+        <attr name="tag_verticalPadding" format="dimension" />
+
+        <attr name="tag_textColor" format="color" />
+        <attr name="tag_checkedTextColor" format="reference|color" />
+        <attr name="tag_textSize" format="dimension" />
+
+        <!-- 边框圆角半径-->
+        <attr name="tag_radius" format="dimension" />
+        <attr name="tag_bottomLeftRadius" format="dimension" />
+        <attr name="tag_bottomRightRadius" format="dimension" />
+        <attr name="tag_topLeftRadius" format="dimension" />
+        <attr name="tag_topRightRadius" format="dimension" />
+        <!-- 边框颜色-->
+        <attr name="tag_strokeColor" format="reference|color" />
+        <attr name="tag_checkedStrokeColor" format="reference|color" />
+        <!-- 边框宽度-->
+        <attr name="tag_strokeWidth" format="dimension" />
+        <!-- 是否多选-->
+        <attr name="tag_multiChooseable" format="boolean" />
+        <attr name="tag_singleLine" format="boolean" />
+
+        <!--单位dp,为了适应wrap_content用integer-->
+        <attr name="tag_width" format="integer|enum">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="tag_height" format="integer|enum">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="tag_maxEms" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="flowlayoutTagsStyle" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tag_textColor">#49C120</item>
+        <item name="tag_backgroundColor">#FFFFFF</item>
+        <item name="tag_inputHintColor">#80000000</item>
+        <item name="tag_inputTextColor">#DE000000</item>
+        <item name="tag_checkedTextColor">#FFFFFF</item>
+        <item name="tag_checkedBackgroundColor">#49C120</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_textSize">15sp</item>
+        <item name="tag_horizontalSpacing">5dp</item>
+        <item name="tag_verticalSpacing">5dp</item>
+        <item name="tag_horizontalPadding">12dp</item>
+        <item name="tag_verticalPadding">3dp</item>
+        <item name="tag_radius">5dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">#49C120</item>
+        <item name="tag_strokeWidth">1px</item>
+        <item name="tag_multiChooseable">true</item>
+        <item name="tag_singleLine">true</item>
+        <!--<item name="tag_width">wrap_content</item>-->
+        <!--<item name="tag_height">wrap_content</item>-->
+        <item name="tag_width">85</item>
+        <item name="tag_height">30</item>
+    </style>
+
+
+    <style name="FlowlayoutTags.Beauty_Red1" parent="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="tag_textColor">@color/base_color_0</item>
+        <item name="tag_backgroundColor">@color/base_color_6</item>
+        <item name="tag_checkedTextColor">@color/base_color_6</item>
+        <item name="tag_checkedBackgroundColor">@color/base_color_0</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_radius">5dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">@color/base_color_0</item>
+        <item name="tag_strokeWidth">1px</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="tag_horizontalPadding">0dp</item>
+        <item name="tag_verticalPadding">0dp</item>
+        <!--单位dp-->
+        <item name="tag_width">85</item>
+        <item name="tag_height">30</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="tag_maxEms">5</item>
+        <!--单选-->
+        <item name="tag_multiChooseable">false</item>
+    </style>
+
+    <style name="FlowlayoutTags.Beauty_Red2" parent="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="tag_textColor">@color/base_color_2</item>
+        <item name="tag_backgroundColor">@color/base_color_6</item>
+        <item name="tag_checkedTextColor">@color/base_color_6</item>
+        <item name="tag_checkedBackgroundColor">@color/base_color_0</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_radius">5dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">@color/base_color_0</item>
+        <item name="tag_strokeWidth">1px</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="tag_horizontalPadding">5dp</item>
+        <item name="tag_verticalPadding">5dp</item>
+
+        <!--这里设置wrap_content时候tag_maxEms不会起作用的-->
+        <item name="tag_maxEms">-1</item>
+        <item name="tag_width">wrap_content</item>
+        <item name="tag_height">wrap_content</item>
+
+    </style>
+</resources>

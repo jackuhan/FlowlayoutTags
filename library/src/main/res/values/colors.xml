@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_color_0">#f53e7b</color>
+    <color name="base_color_1">#333333</color>
+    <color name="base_color_2">#666666</color>
+    <color name="base_color_3">#999999</color>
+    <color name="base_color_4">#eeeeee</color>
+    <color name="base_color_5">#e5e5e5</color>
+    <color name="base_color_6">#ffffff</color>
+
+    <color name="button_gray">#dcdcdc</color>
+</resources>
