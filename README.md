@@ -5,4 +5,4 @@
 # Demo
 
 ### Screenshot
-![screenshot1](screenshot/Screenshot_1.png.jpg)
+<img src="screenshot/Screenshot_1.png" width="50%" height="40%" alt="效果">
