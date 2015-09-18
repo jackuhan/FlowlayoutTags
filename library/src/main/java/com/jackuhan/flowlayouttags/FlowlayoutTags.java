@@ -347,6 +347,7 @@ public class FlowlayoutTags extends ViewGroup {
     }
 
     /**
+     * 返回选中的tag的文字
      * Returns the tag array in group, except the INPUT tag.
      *
      * @return the tag array.
@@ -365,11 +366,12 @@ public class FlowlayoutTags extends ViewGroup {
     }
 
     /**
+     * 返回选中的tag的文字
      * Returns the tag array in group, except the INPUT tag.
      *
      * @return the tag array.
      */
-    public ArrayList<String> getCheckedTagsTexts() {
+    public ArrayList<String> getCheckedTagsTextsArrayList() {
         final int count = getChildCount();
         final ArrayList<String> tagList = new ArrayList<String>();
         for (int i = 0; i < count; i++) {
@@ -383,7 +385,8 @@ public class FlowlayoutTags extends ViewGroup {
     }
 
     /**
-     * Return the checked tag index.单选时候有用,多选时候返回第一个
+     * 单选时候有用,多选时候返回第一个
+     * Return the checked tag index.
      *
      * @return the checked tag index, or -1 if not exists.
      */
@@ -396,6 +399,25 @@ public class FlowlayoutTags extends ViewGroup {
             }
         }
         return -1;
+    }
+
+    /**
+     * 返回选中的tag的索引
+     * Returns the tag array in group, except the INPUT tag.
+     *
+     * @return the tag array.
+     */
+    public ArrayList<Integer> getCheckedTagsIndexArrayList() {
+        final int count = getChildCount();
+        final ArrayList<Integer> tagList = new ArrayList<Integer>();
+        for (int i = 0; i < count; i++) {
+            final TagView tagView = getTagAt(i);
+            if (tagView.isChecked) {
+                tagList.add(i);
+            }
+        }
+
+        return tagList;
     }
 
     /**

@@ -26,7 +26,7 @@ public class MainActivity extends Activity{
         this.flred2 = (FlowlayoutTags) findViewById(R.id.fl_red2);
         this.fldefault = (FlowlayoutTags) findViewById(R.id.fl_default);
 
-        List<String> list = new ArrayList<String>();
+        final List<String> list = new ArrayList<String>();
         list.add("绿色足球鞋");
         list.add("白色棒球帽");
         list.add("黑色毛衣外套");
@@ -40,21 +40,42 @@ public class MainActivity extends Activity{
         fldefault.setOnTagClickListener(new FlowlayoutTags.OnTagClickListener() {
             @Override
             public void onTagClick(String tag) {
-                Log.v("Hanjh fldefault", fldefault.getCheckedTagsTexts().toString());
+                Log.v("Hanjh fldefault", fldefault.getCheckedTagsTextsArrayList().toString());
+
+                ArrayList<Integer> tagList = fldefault.getCheckedTagsIndexArrayList();
+                String mCategory = "";
+                for (int i = 0; i < tagList.size(); i++) {
+                    mCategory += list.get(tagList.get(i)) + ",";
+                }
+                Log.e("Hanjh","mCategory "+mCategory +" "+tagList);
             }
         });
 
         flred.setOnTagClickListener(new FlowlayoutTags.OnTagClickListener() {
             @Override
             public void onTagClick(String tag) {
-                Log.v("Hanjh flred", flred.getCheckedTagsTexts().toString());
+                Log.v("Hanjh flred", flred.getCheckedTagsTextsArrayList().toString());
+
+                ArrayList<Integer> tagList = flred.getCheckedTagsIndexArrayList();
+                String mCategory = "";
+                for (int i = 0; i < tagList.size(); i++) {
+                    mCategory += list.get(tagList.get(i)) + ",";
+                }
+                Log.e("Hanjh","mCategory "+mCategory +" "+tagList);
             }
         });
 
         flred2.setOnTagClickListener(new FlowlayoutTags.OnTagClickListener() {
             @Override
             public void onTagClick(String tag) {
-                Log.v("Hanjh flred2", flred2.getCheckedTagsTexts().toString());
+                Log.v("Hanjh flred2", flred2.getCheckedTagsTextsArrayList().toString());
+
+                ArrayList<Integer> tagList = flred2.getCheckedTagsIndexArrayList();
+                String mCategory = "";
+                for (int i = 0; i < tagList.size(); i++) {
+                    mCategory += list.get(tagList.get(i)) + ",";
+                }
+                Log.e("Hanjh","mCategory "+mCategory +" "+tagList);
             }
         });
 
